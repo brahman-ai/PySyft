@@ -14,6 +14,7 @@ from syft.frameworks.torch.tensors.interpreters.additive_shared import AdditiveS
 
 
 class PrivateGridNetwork(AbstractGrid):
+
     def __init__(self, *workers):
         super().__init__()
         self.workers = list(workers)
